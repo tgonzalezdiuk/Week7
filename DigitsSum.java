@@ -7,22 +7,29 @@ Program: Java
 import java.util.*;
 
 
-public class Prompter{
-    public static void main(String[] args){
-        int min = 0;
-        int max = 0;
+public class Prompter
+{
+    public static void main(String[] args)
+    
+    {
+        
+        int Minimum = 0;
+        int Maximum = 0;
+        
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the minimum value in the range: ");
-        min = input.nextInt();
+        Minimum = input.nextInt();
+        
         System.out.print("Enter the maximum value in the range: ");
-        max = input.nextInt();
+        Maximum = input.nextInt();
+        
         System.out.print("Enter a number withing the range entered: ");
-        int num = input.nextInt();
+        int Number = input.nextInt();
 
-        while(num <= min || num >= max)
+        while(Number <= Minimum || Number >= Maximum)
         {
             System.out.print("Enter a number withing the range entered: ");
-            num = input.nextInt();
+            Number = input.nextInt();
         }
         
         input.close();
